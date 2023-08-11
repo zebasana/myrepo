@@ -10,7 +10,7 @@ resource "aws_instance" "example_instance" {
 
   ami           = "ami-08a52ddb321b32a8c"  # Replace with your desired AMI ID
   instance_type = "t2.micro"
-  key_name      = "northvirginia"
+  key_name      = "eks"
 
   tags = {
     Name = "ExampleInstance-${count.index}"
